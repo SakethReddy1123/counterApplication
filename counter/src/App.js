@@ -8,13 +8,13 @@ function App() {
   const onDecrement = () => setState({ counter: state.counter - 1 });
   const onReset = () => setState({ counter: (state.counter = 0) });
   return (
-    <>
+    <div className="container">
       <h1>Counter Application</h1>
       <h1>{state.counter}</h1>
       <Button Children="Increment" onClick={onIncrement}></Button>
       <Button Children="Decrement" onClick={onDecrement}></Button>
       <Button Children="Rest" onClick={onReset}></Button>
-    </>
+    </div>
   );
 }
 
